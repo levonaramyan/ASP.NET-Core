@@ -1,0 +1,16 @@
+﻿@using MVC_01_Planets.Models
+@model List<Planet>
+
+<!doctype html>
+<html>
+<head>
+    <title>Planet List</title>
+</head>
+<body>
+    @foreach (var p in Model)
+    {
+        <p>@p.Name</p>
+        <p>@p.Description</p>
+    }
+</body>
+</html>
