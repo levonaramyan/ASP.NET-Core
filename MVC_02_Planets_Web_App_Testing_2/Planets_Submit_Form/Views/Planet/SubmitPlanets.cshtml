@@ -1,0 +1,11 @@
+﻿@using Planets_Submit_Form.Models
+@model Planet[]
+
+<h1>Below is the list of submitted planets</h1>
+@foreach (Planet planet in Model)
+{
+    <p>
+        The planet @(planet.Position) is: @planet.Name
+    </p>
+}
+
