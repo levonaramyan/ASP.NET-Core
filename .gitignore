@@ -328,3 +328,5 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+/Phonebook_Application
+/MVC_02_Planets_Web_App_Testing_2/Planets_Submit_Form
