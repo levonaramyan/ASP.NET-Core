@@ -11,14 +11,26 @@ namespace Testing_Swagger.Controllers
     [ApiController]
     public class BlaBlaController : ControllerBase
     {
-        // GET: api/BlaBla
+        /// <summary>
+        /// For getting value1 and value2
+        /// </summary>
+        /// <returns></returns>
+        /// <remarks>
+        /// This is some sample request.
+        /// </remarks>
+        /// <returns>A newly created TodoItem</returns>
+        /// <response code="201">Returns values 1 and 2</response>
         [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET: api/BlaBla/5
+        /// <summary>
+        /// Getting value by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}", Name = "Get")]
         public string Get(int id)
         {
